@@ -1,0 +1,94 @@
+@font-face {
+    font-family: myFirstFont ;
+    src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+body {
+    background-color:rgb(243 229 216) ;
+    color: rgb(114 109 105);
+    font-family: myFirstFont;
+}
+
+#main-content{
+    margin: 20%;
+    background-color: white;
+    border-radius: 20px;
+    padding: 4% ;
+}
+#main-content h3{
+    color: rgb(132 74 53);
+}
+
+
+#ingredients li{
+    list-style: none;
+}
+#ingredients li::before{
+    content: "\2022";   
+    /* can use these codes for different bullet points • = "\2022", ◦ = \25E6" and ▪ = "\25AA"*/
+    color: rgb(106 59 54);
+    padding-left: 2%;
+    padding-right: 2%;
+}
+/* another way to add color to the bullet points without using the first step*/
+#instructions li::marker{
+   color: rgb(132 74 54);
+    
+}
+
+#instructions li::before{
+padding-right: 2%;
+}
+#prep {
+    background-color: rgb(255 247 252);
+    border-radius: 20px;
+    padding: 4%;
+    padding-top: 2%;
+}
+#prep li {
+    list-style: none;
+    padding-left: 5%;
+}
+#prep li::before{
+    content: "•";
+    color: rgb(97 33 59);
+    padding-right: 3%;
+}
+
+#prep h4 {
+    color: rgb(149 95 119);
+}
+img {
+    height: 30%;
+    width: 100%;
+    border-radius: 20px;
+}
+table{
+    margin-top: 5%;
+    width: 100%;
+    border-collapse: collapse;
+}
+td{
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+    color:rgb(132 74 53) ;
+}
+th{
+    font-weight: normal;
+    padding-left: 5%;
+    text-align:left;
+    border-bottom: 1px solid #ddd;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+
+@media only screen and (max-width: 760px) {
+    body{
+        background-color: white ;
+    }
+    #main-content{
+        margin: 5%;
+    }
+    
+}
